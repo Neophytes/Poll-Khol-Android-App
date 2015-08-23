@@ -1,4 +1,4 @@
 # Poll-Khol-Android-App
-A political party manifesto social interactive 
+An Indian political party manifesto social interactive 
 
 ####Winner @hackIIITD :smiley:
