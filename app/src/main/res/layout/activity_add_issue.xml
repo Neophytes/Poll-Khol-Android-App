@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCDD2"
+
+    tools:context="com.example.jigyasa.poll_khol.AddIssue"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textSize="24sp"
+            android:textColor="#D32F2F"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Add your problem title and decription"
+            android:textStyle="bold"
+            android:layout_margin="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/title"
+            android:hint="Problem Title"
+            android:layout_margin="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:hint="Describe your problem"
+            android:id="@+id/description"
+            android:layout_margin="15dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_margin="15dp"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:id="@+id/cancel"
+                android:background="#FFFF99"
+                android:layout_margin="5dp"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="Done"
+                android:id="@+id/done"
+                android:background="#FFFF99"/>
+        </LinearLayout>
+
+    </LinearLayout>

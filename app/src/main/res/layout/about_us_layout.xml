@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F44336">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcherpk"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:id="@+id/aboutus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reaching out to masses in a light-hearted way"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu" />
+
+
+    <TextView
+        android:id="@+id/aboutus3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/webpage"
+        android:clickable="true"
+        android:autoLink="web"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:textStyle="bold"
+        android:textColor="#cdc1c5"
+
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu" />
+
+    <TextView
+        android:id="@+id/aboutus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact us at: info@pollkhol.com"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="#cdc1c5"
+        android:clickable="true"
+        android:autoLink="web"
+
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:text="Spread The Word!"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparent"/>
+
+
+</LinearLayout>

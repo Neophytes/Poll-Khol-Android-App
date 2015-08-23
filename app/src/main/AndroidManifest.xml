@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jigyasa.poll_khol" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcherpk"
+        android:label="@string/app_name"
+        android:name="com.example.jigyasa.poll_khol.AppController"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon"
+        >
+
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="true" />
+        <!-- Set to true to use Branch_Test_Key -->
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_nhhHDhAceGOeE6qYgvO39pddyDbgy0Pd" />
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_gmjKqjBgaSKpu9D1gqR99jbdtrobF8Mz" />
+
+
+        <meta-data android:name="DATABASE" android:value="poll_khol.db" />
+        <meta-data android:name="VERSION" android:value="2" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.example.jigyasa.poll_khol" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MyNavigationDrawerTheme" >
+
+            <intent-filter>
+                <data android:scheme="http" android:host="neophytes.github.io/" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".ManifestoItemDetail">
+
+        </activity>
+        <activity android:name=".MyLogIn" android:label="@string/app_name">
+        </activity>
+        <activity android:name=".SplashScreen" android:label="@string/app_name">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+            </activity>
+        <uses-permission android:name="android.permission.INTERNET"/><!-- Network State Permissions -->
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        <activity android:name=".AddIssue"></activity>
+    </application>
+
+</manifest>
